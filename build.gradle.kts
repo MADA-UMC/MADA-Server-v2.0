@@ -6,6 +6,7 @@ plugins {
 	id("org.springframework.boot") version "3.5.7"
 	id("io.spring.dependency-management") version "1.1.7"
 	id("org.jlleitschuh.gradle.ktlint") version "14.0.1"
+    id("jacoco")
 
 }
 
@@ -29,14 +30,6 @@ repositories {
 	mavenCentral()
 }
 
-ktlint {
-    filter {
-        exclude("**/build.gradle.kts")
-    }
-	reporters {
-		reporter(ReporterType.JSON)
-	}
-}
 
 extra["springModulithVersion"] = "1.4.4"
 
@@ -70,5 +63,43 @@ kotlin {
 }
 
 tasks.withType<Test> {
-	useJUnitPlatform()
+    useJUnitPlatform()
+    finalizedBy("jacocoTestReport")
+}
+
+ktlint {
+    filter {
+        exclude("*.kts")
+        exclude("*.json")
+    }
+    reporters {
+        reporter(ReporterType.JSON)
+    }
+}
+
+jacoco {
+    toolVersion = "0.8.14"
+}
+
+tasks.jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            element = "CLASS"
+
+            limit {
+                counter = "BRANCH"
+                value = "COVEREDRATIO"
+                minimum = 0.90.toBigDecimal()
+            }
+        }
+    }
+}
+
+tasks.jacocoTestReport {
+    dependsOn(tasks.test)
+
+    reports {
+        xml.required.set(true)
+        html.required.set(true)
+    }
 }
