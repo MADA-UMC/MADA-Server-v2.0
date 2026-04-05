@@ -13,6 +13,7 @@ class ServerApplicationTests {
 
         new Documenter(modules)
             .writeModulesAsPlantUml()
-            .writeIndividualModulesAsPlantUml();
+            .writeIndividualModulesAsPlantUml()
+            .writeDocumentation();
     }
 }
