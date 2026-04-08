@@ -1,6 +1,6 @@
 package com.mada.server.account;
 
-import com.mada.server.auth.internal.OAuthProvider;
+import com.mada.server.auth.OAuthProvider;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.UuidGenerator;

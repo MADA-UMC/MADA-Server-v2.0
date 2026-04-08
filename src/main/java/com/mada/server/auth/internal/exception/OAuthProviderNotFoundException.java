@@ -1,4 +1,4 @@
-package com.mada.server.auth.internal;
+package com.mada.server.auth.internal.exception;
 
 import com.mada.server.common.error.NotFoundException;
 

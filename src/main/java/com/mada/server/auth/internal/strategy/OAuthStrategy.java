@@ -1,4 +1,6 @@
-package com.mada.server.auth.internal;
+package com.mada.server.auth.internal.strategy;
+
+import com.mada.server.auth.OAuthProvider;
 
 public interface OAuthStrategy {
     OAuthProvider getProvider();

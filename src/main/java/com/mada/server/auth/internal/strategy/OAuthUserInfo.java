@@ -1,4 +1,4 @@
-package com.mada.server.auth.internal;
+package com.mada.server.auth.internal.strategy;
 
 
 import jakarta.validation.constraints.NotNull;

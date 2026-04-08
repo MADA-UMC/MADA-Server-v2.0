@@ -1,7 +1,9 @@
-package com.mada.server.auth.internal;
+package com.mada.server.auth.internal.filter;
 
 import com.mada.server.account.Account;
 import com.mada.server.account.AccountQueryService;
+import com.mada.server.auth.internal.AccountUserDetails;
+import com.mada.server.auth.internal.JwtProvider;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

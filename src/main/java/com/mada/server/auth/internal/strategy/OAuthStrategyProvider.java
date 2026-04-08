@@ -1,5 +1,7 @@
-package com.mada.server.auth.internal;
+package com.mada.server.auth.internal.strategy;
 
+import com.mada.server.auth.OAuthProvider;
+import com.mada.server.auth.internal.exception.OAuthProviderNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
