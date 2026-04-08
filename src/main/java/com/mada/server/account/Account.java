@@ -1,6 +1,5 @@
 package com.mada.server.account;
 
-import com.mada.server.auth.OAuthProvider;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.UuidGenerator;
@@ -14,8 +13,8 @@ import java.util.UUID;
 @Entity
 @Table(name = "account", uniqueConstraints = {
     @UniqueConstraint(
-        name = "uk_provider_provider_id",
-        columnNames = {"provider, provider_id"}
+        name = "uk_account_provider_provider_id",
+        columnNames = {"provider", "provider_id"}
     ),
 })
 public class Account {

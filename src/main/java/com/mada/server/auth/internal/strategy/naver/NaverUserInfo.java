@@ -1,16 +1,16 @@
 package com.mada.server.auth.internal.strategy.naver;
 
 import com.mada.server.auth.internal.strategy.OAuthUserInfo;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
 @Getter
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class NaverUserInfo implements OAuthUserInfo {
     private final String id;
-    private final String nickname;
     private final String email;
-    private final String mobile;
+    private final String phoneNumber;
 
     @Override
     public String getProviderId() {
@@ -24,6 +24,6 @@ public class NaverUserInfo implements OAuthUserInfo {
 
     @Override
     public String getPhoneNumber() {
-        return this.mobile;
+        return this.phoneNumber;
     }
 }

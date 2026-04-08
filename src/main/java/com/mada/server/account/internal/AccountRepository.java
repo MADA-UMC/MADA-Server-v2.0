@@ -1,7 +1,7 @@
 package com.mada.server.account.internal;
 
 import com.mada.server.account.Account;
-import com.mada.server.auth.OAuthProvider;
+import com.mada.server.account.OAuthProvider;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

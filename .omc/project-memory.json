@@ -1,0 +1,278 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1775644034082,
+  "projectRoot": "/Users/lipton/IdeaProjects/MADA-Server-v2",
+  "techStack": {
+    "languages": [
+      {
+        "name": "Java/Kotlin",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "build.gradle"
+        ]
+      }
+    ],
+    "frameworks": [],
+    "packageManager": "gradle",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "src"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "build": {
+      "path": "build",
+      "purpose": "Build output",
+      "fileCount": 1,
+      "lastAccessed": 1775644034074,
+      "keyFiles": [
+        "resolvedMainClassName"
+      ]
+    },
+    "gradle": {
+      "path": "gradle",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1775644034075,
+      "keyFiles": []
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 0,
+      "lastAccessed": 1775644034075,
+      "keyFiles": []
+    },
+    "src/test": {
+      "path": "src/test",
+      "purpose": "Test files",
+      "fileCount": 0,
+      "lastAccessed": 1775644034075,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src/main/java/com/mada/server/auth/internal/strategy/google/GoogleStrategy.java",
+      "accessCount": 5,
+      "lastAccessed": 1775646227405,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/account/AccountService.java",
+      "accessCount": 4,
+      "lastAccessed": 1775648086762,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/auth/internal/RefreshToken.java",
+      "accessCount": 4,
+      "lastAccessed": 1775650982011,
+      "type": "file"
+    },
+    {
+      "path": "src/main/resources/application.properties",
+      "accessCount": 4,
+      "lastAccessed": 1775652998051,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/auth/internal/strategy/kakao/KakaoStrategy.java",
+      "accessCount": 4,
+      "lastAccessed": 1775653005843,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/auth/internal/strategy/google/GoogleUserInfo.java",
+      "accessCount": 3,
+      "lastAccessed": 1775645524666,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/auth/internal/strategy/naver/NaverStrategy.java",
+      "accessCount": 3,
+      "lastAccessed": 1775646210633,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/auth/internal/strategy/google/GoogleResponse.java",
+      "accessCount": 3,
+      "lastAccessed": 1775646235673,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/auth/internal/strategy/kakao/KakaoResponse.java",
+      "accessCount": 3,
+      "lastAccessed": 1775653005289,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/account/internal/NicknameGenerator.java",
+      "accessCount": 2,
+      "lastAccessed": 1775648062414,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/account/OAuthProvider.java",
+      "accessCount": 2,
+      "lastAccessed": 1775648224680,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java",
+      "accessCount": 2,
+      "lastAccessed": 1775650970825,
+      "type": "directory"
+    },
+    {
+      "path": "src/main/java/com/mada/server/account/Account.java",
+      "accessCount": 2,
+      "lastAccessed": 1775651856365,
+      "type": "file"
+    },
+    {
+      "path": "src/main/resources/application-local.properties",
+      "accessCount": 2,
+      "lastAccessed": 1775652541788,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/auth/internal/strategy/OAuthStrategy.java",
+      "accessCount": 1,
+      "lastAccessed": 1775644070197,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/auth/internal/strategy/OAuthUserInfo.java",
+      "accessCount": 1,
+      "lastAccessed": 1775644071109,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/auth/internal/strategy/naver/NaverResponse.java",
+      "accessCount": 1,
+      "lastAccessed": 1775644074469,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/auth/internal/strategy/naver/NaverUserInfo.java",
+      "accessCount": 1,
+      "lastAccessed": 1775644074735,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/auth/internal/strategy/kakao/KakaoUserInfo.java",
+      "accessCount": 1,
+      "lastAccessed": 1775645527335,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/auth/OAuthProvider.java",
+      "accessCount": 1,
+      "lastAccessed": 1775647528752,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/auth/AuthController.java",
+      "accessCount": 1,
+      "lastAccessed": 1775647531816,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/auth/internal/JwtProvider.java",
+      "accessCount": 1,
+      "lastAccessed": 1775648185563,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/auth/internal/strategy/apple/ApplePublicKeyResponse.java",
+      "accessCount": 1,
+      "lastAccessed": 1775648261845,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/auth/internal/strategy/apple/AppleUserInfo.java",
+      "accessCount": 1,
+      "lastAccessed": 1775648264842,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/auth/internal/strategy/apple/AppleStrategy.java",
+      "accessCount": 1,
+      "lastAccessed": 1775648304741,
+      "type": "file"
+    },
+    {
+      "path": "src/main/java/com/mada/server/auth/internal/domain/RefreshToken.java",
+      "accessCount": 1,
+      "lastAccessed": 1775651857012,
+      "type": "file"
+    },
+    {
+      "path": "src/main/resources/db/migration/V1__create_account.sql",
+      "accessCount": 1,
+      "lastAccessed": 1775651876420,
+      "type": "file"
+    },
+    {
+      "path": "src/main/resources/db/migration/V2__create_refresh_token.sql",
+      "accessCount": 1,
+      "lastAccessed": 1775651878057,
+      "type": "file"
+    },
+    {
+      "path": "src/main/resources/db/account/migration/V1__create_account.sql",
+      "accessCount": 1,
+      "lastAccessed": 1775651987716,
+      "type": "file"
+    },
+    {
+      "path": "src/main/resources/db/auth/migration/V1__create_refresh_token.sql",
+      "accessCount": 1,
+      "lastAccessed": 1775651988417,
+      "type": "file"
+    },
+    {
+      "path": "docker-compose.yml",
+      "accessCount": 1,
+      "lastAccessed": 1775652128914,
+      "type": "file"
+    },
+    {
+      "path": "src/main/resources/db/migration/account/V1__create_account.sql",
+      "accessCount": 1,
+      "lastAccessed": 1775652319267,
+      "type": "file"
+    },
+    {
+      "path": "src/main/resources/db/migration/auth/V1__create_refresh_token.sql",
+      "accessCount": 1,
+      "lastAccessed": 1775652322594,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

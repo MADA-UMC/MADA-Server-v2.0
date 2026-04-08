@@ -1,4 +1,4 @@
-package com.mada.server.auth.internal;
+package com.mada.server.auth.internal.config;
 
 import com.mada.server.auth.internal.filter.JwtAuthenticationFilter;
 import lombok.RequiredArgsConstructor;

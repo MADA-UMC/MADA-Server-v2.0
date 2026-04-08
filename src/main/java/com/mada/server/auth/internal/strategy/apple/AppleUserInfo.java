@@ -1,4 +1,4 @@
-package com.mada.server.auth.internal.strategy.google;
+package com.mada.server.auth.internal.strategy.apple;
 
 import com.mada.server.auth.internal.strategy.OAuthUserInfo;
 import lombok.Getter;
@@ -6,13 +6,13 @@ import lombok.RequiredArgsConstructor;
 
 @Getter
 @RequiredArgsConstructor
-public class GoogleUserInfo implements OAuthUserInfo {
-    private final String id;
+public class AppleUserInfo implements OAuthUserInfo {
+    private final String sub;
     private final String email;
 
     @Override
     public String getProviderId() {
-        return this.id;
+        return this.sub;
     }
 
     @Override

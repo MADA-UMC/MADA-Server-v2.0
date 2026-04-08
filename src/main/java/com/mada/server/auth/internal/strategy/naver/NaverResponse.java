@@ -6,5 +6,13 @@ import lombok.Getter;
 public class NaverResponse {
     private String resultCode;
     private String message;
-    private NaverUserInfo response;
+    private NaverAccount response;
+
+    @Getter
+    public static class NaverAccount {
+        private String id;
+        private String nickname;
+        private String email;
+        private String mobile;
+    }
 }
