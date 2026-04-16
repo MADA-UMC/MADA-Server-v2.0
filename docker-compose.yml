@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: mada-postgres
+    environment:
+      POSTGRES_DB: mada
+      POSTGRES_USER: mada
+      POSTGRES_PASSWORD: mada
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

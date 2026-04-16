@@ -1,4 +1,4 @@
-package com.mada.server.auth.internal;
+package com.mada.server.auth.internal.jwt;
 
 import com.mada.server.account.Account;
 import com.mada.server.account.AccountDto;

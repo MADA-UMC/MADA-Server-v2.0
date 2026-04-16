@@ -1,0 +1,21 @@
+package com.mada.server.auth.internal.strategy;
+
+import com.mada.server.account.OAuthProvider;
+import com.mada.server.auth.internal.exception.OAuthProviderNotFoundException;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
+
+@Component
+@RequiredArgsConstructor
+public class OAuthStrategyProvider {
+    private final List<OAuthStrategy> strategies;
+
+    public OAuthStrategy getStrategy(OAuthProvider provider){
+        return this.strategies.stream()
+            .filter(s -> s.getProvider() == provider)
+            .findFirst()
+            .orElseThrow(OAuthProviderNotFoundException::new);
+    }
+}

@@ -1,9 +1,6 @@
 package com.mada.server.account;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.UuidGenerator;
 
@@ -14,11 +11,23 @@ import java.util.UUID;
 @RequiredArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "account")
+@Table(name = "account", uniqueConstraints = {
+    @UniqueConstraint(
+        name = "uk_account_provider_provider_id",
+        columnNames = {"provider", "provider_id"}
+    ),
+})
 public class Account {
     @Id
     @UuidGenerator(style = UuidGenerator.Style.VERSION_7)
     private UUID id;
+
+    @Column(name = "provider", nullable = false)
+    @Enumerated(EnumType.STRING)
+    private OAuthProvider provider;
+
+    @Column(name = "provider_id", nullable = false)
+    private String providerId;
 
     @Column(nullable = false)
     private String nickname;

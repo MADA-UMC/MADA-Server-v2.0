@@ -1,7 +1,9 @@
-package com.mada.server.auth.internal;
+package com.mada.server.auth.internal.filter;
 
 import com.mada.server.account.Account;
-import com.mada.server.account.AccountQueryService;
+import com.mada.server.account.AccountService;
+import com.mada.server.auth.internal.jwt.AccountUserDetails;
+import com.mada.server.auth.internal.jwt.JwtProvider;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -23,7 +25,7 @@ import java.util.UUID;
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     private final JwtProvider jwtProvider;
-    private final AccountQueryService accountQueryService;
+    private final AccountService accountService;
 
     @Override
     protected void doFilterInternal(
@@ -38,7 +40,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
         if (token != null && jwtProvider.isValid(token)) {
             UUID accountId = jwtProvider.extractAccountId(token);
-            accountQueryService.findById(accountId).ifPresent(account -> setAuthentication(account, request));
+            accountService.findById(accountId).ifPresent(account -> setAuthentication(account, request));
         }
 
         filterChain.doFilter(request, response);
